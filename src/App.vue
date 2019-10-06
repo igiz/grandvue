@@ -1,21 +1,22 @@
 <template>
   <div id="app">
-    <section id="search">
-      <search-toolbar />
-    </section>
+    <page />
   </div>
 </template>
 
 <script>
-import SearchToolbar from "@/components/SearchToolbar";
+import Page from "@/views/Page";
 
 export default {
   name: "app",
   components: {
-    "search-toolbar": SearchToolbar
+    page: Page
   }
 };
 </script>
 
 <style>
+html {
+  background: linear-gradient(to bottom, #344e4d, #524a4a) fixed;
+}
 </style>

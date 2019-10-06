@@ -1,50 +1,55 @@
 <template>
-  <section id="search_toolbar">
-    <input id="search_field" type="text" placeholder="search for item" />
-    <button id="search_button" type="submit" value="Search">Search</button>
+  <section class="search_toolbar">
+    <input class="search_field" type="text" placeholder="search for item" />
+    <button class="search_button" type="submit" value="Search">Search</button>
   </section>
 </template>
 
 <style>
-#search_toolbar {
+.search_toolbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-#search_toolbar > * {
+.search_toolbar > * {
   border: 0.05rem solid #666b6b;
   padding-left: 0.5rem;
 }
 
-#search_toolbar > *:focus {
+.search_toolbar > *:focus {
   outline: none;
 }
 
-#search_field {
+.search_field {
+  height: 100%;
+  width: 70%;
+  font-size: 14pt;
   background-color: #f5f8fc;
   border-radius: 8px 0px 0px 8px;
   border-right: 0px;
 }
 
-#search_field:focus {
-  background-color: #d0f7f7;
+.search_field:focus {
+  background-color: #cee6e6;
   outline: none;
 }
 
-#search_button {
-  background-image: linear-gradient(90deg, #343a40, #525d69);
+.search_button {
+  height: 100%;
+  width: 30%;
+  font-size: 14pt;
+  background-image: linear-gradient(0deg, #4c5a61, #3e4e5a);
   border-radius: 0px 8px 8px 0px;
-  color: #d3d9e0;
+  color: #ffffff;
 }
 
-#search_button:hover {
-  background-image: linear-gradient(90deg, #7d2a2a, #bd4b4b);
-  color: white;
+.search_button:hover {
+  background-image: linear-gradient(0deg, #4c4c4c, #7f838f);
 }
 
-#search_button:active {
-  background-color: white;
+.search_button:active {
+  background-image: linear-gradient(0deg, #343a40, #525d69);
 }
 </style>
 
